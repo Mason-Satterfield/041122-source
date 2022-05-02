@@ -11,13 +11,11 @@ public class MainMenu {
 		System.out.println("Welcome to Revature Bank");
         
 		do {
-        	System.out.println("Please enter the number for which part of application you wish to run \n1. Customer \n2. Employee \n3. Bank Admin \n4. Exit Application");
+        	System.out.println("\nPlease enter the number for which part of application you wish to run \n\n1. Customer \n2. Employee \n3. Bank Admin \n4. Exit Application");
             whichApp = input.nextInt();
 	        switch(whichApp) {
 	        	case 1: 
 	        		CustomerMainMenu.customerMenu();
-	        		//to end the customer session, it will display the ending message in the customer menu
-	        		whichApp = 4;
 	        		break;
 	        	case 2:
 	        		EmployeeMainMenu.employeeMenu();
